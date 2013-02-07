@@ -149,7 +149,9 @@ namespace SignalR.ProxyGenerator
         /// 
         /// Usage for default AMD alias of'signalr' -> hubify.exe /o:[path_to_output_file]\hubs.js /amd 
         /// Usage for custom AMD alias -> hubify.exe /o:[path_to_output_file]\hubs.js /amd:[aliasName] 
-        /// </summary>
+        ///
+		/// hamish.crittenden@gmail.com
+		///</summary>
         private static string WrapWithAmdDefinition(string js, string signalrAmdAlias)
         {
             var amdWrappedJs = new StringBuilder();
